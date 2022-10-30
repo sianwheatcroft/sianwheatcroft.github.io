@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,700;1,100&family=Pacifico&family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<header>
+    <!--navigation to other pages-->
+    <nav class="navbar">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.html#target-html">HTML</a></li>
+            <li><a href="./index.html#target-css">CSS</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+<div class="main-content">
+    <!--introduction-->
+    <h1 class="target-home">Web dev <br>cheatsheet</h1>
+    <p>Select from the options above to view my handy cheatsheets</p>
+
+    <!--main HTML section-->
+    <div class="html-section">
+        <h2><a id="target-html">HTML</a></h2>
+
+        <table>
+            <tr>
+                <th>Tag</th>
+                <th>Description</th>
+                <th>Example</th>
+            </tr>
+            <tr class="table-tag">
+                <td class="tag-element">< html > < / html ></td>
+                <td>Creates an HTML document</td>
+                <td>N/A</td>
+            </tr>
+            <tr >
+                <td class="tag-element">< head > < / head ></td>
+                <td>Sets off the title & other info that isn't displayed</td>
+                <td>N/A</td>
+            </tr>
+            <tr class="table-tag">
+                <td class="tag-element"> < body > < / body >  </td>
+                <td>Sets off the visible portion of the document</td>
+                <td>N/A</td>
+            </tr>
+            <tr>
+                <td class="tag-element">< title > < / title ></td>
+                <td>Puts name of the document in the title bar; 
+                    when bookmarking pages, this is what isbookmarked</td>
+                <td>N/A</td>
+            </tr>
+            <tr  class="table-tag">
+                <td class="tag-element"> < h1 > < / h1 > --> < h6 > < / h6 > </td>
+                <td>Creates headlines -- H1=largest, H6=smallest</td>
+                <td> < h1 > HelloWorld < / h1 > </td>
+            </tr>
+            <tr>
+                <td  class="tag-element"> < strong > < / strong > </td>
+                <td>Creates bold text</td>
+                <td>This word will be < strong > bold< / strong > here</td>
+            </tr>
+            <tr  class="table-tag">
+                <td class="tag-element">< em > < / em > </td>
+                <td>Creates italicized text</td>
+                <td>this word will be < em >  italic < / em > here</td>
+            </tr>
+            <tr>
+                <td class="tag-element">< a href="">< / a ></td>
+                <td>Creates a hyperlink to a Uniform Resource Locator</td>
+                <td>< a href="URL">clickable text< / a ></td>
+            </tr>
+            <tr class="table-tag">
+                <td class="tag-element" >< p > < / p ></td>
+                <td>Creates a new paragraph</td>
+                <td>< p > insert text here < / p ></td>
+            </tr>
+            <tr>
+                <td class="tag-element">< br > </td>
+                <td>Inserts a line break</td>
+                <td>note: you don't need a closing tag</td>
+            </tr>
+            <tr class="table-tag">
+                <td class="tag-element">< div > < / div ></td>
+                <td>Used to format block content with CSS</td>
+                <td>content can be added to divs </td>
+            </tr>
+            <tr>
+                <td class="tag-element">< ul > < / ul ></td>
+                <td>Creates an unordered list</td>
+                <td>list items are placed inside this tag</td>
+            </tr>
+            <tr class="table-tag">
+                <td class="tag-element">< ol > < / ol ></td>
+                <td>creates an ordered list</td>
+                <td>list items are placed inside this tag and these will be numbered</td>
+            </tr>
+            <tr>
+                <td class="tag-element">< li > < / li ></td>
+                <td>Encompasses each list item</td>
+                <td>goes inside ol or ul tag</td>
+            </tr>
+            <tr class="table-tag">
+                <td class="tag-element">< img src="" alt="" > </td>
+                <td>adds an image with alt text</td>
+                <td><img src="URL" alt="description of image"></td>
+            </tr>
+            <tr>
+                <td class="tag-element">< table > < / table ></td>
+                <td>Creates a table</td>
+                <td>goes outside a table</td>
+            </tr>
+            <tr class="table-tag">
+                <td class="tag-element">< th > < / th > </td>
+                <td>Sets off the table header (a normal cell with bold, centered text)</td>
+                <td>N/A</td>
+            </tr>
+            <tr>
+                <td class="tag-element">< tr > < / tr > </td>
+                <td>teSets off each row in a tablest</td>
+                <td>td will then be placed inside this tag</td>
+            </tr>
+            <tr class="table-tag">
+                <td class="tag-element">< td > < / td > </td>
+                <td>table data will be placed inside this tag</td>
+                <td>N/A</td>
+            </tr>
+            <tr><td></td></tr>
+
+        </table>
+
+    </div>
+    <!--main CSS section-->
+
+    <div class="css-section"> 
+        <h2><a id="target-css">CSS</a></h2>
+
+        <table>
+            <tr>
+                <th>Tag</th>
+                <th>Description</th>
+                <th>Example</th>
+            </tr>
+            <tr class="table-tag">
+                <td class="tag-element">font-family</td>
+                <td>tells browser what fonts to use</td>
+                <td class="example">font-family{ <br>
+                    Helvetica, serif, Ariel; <br>
+                } </td>
+            </tr>
+            <tr>
+                <td class="tag-element">font-size</td>
+                <td>tells the browser what size font to use</td>
+                <td class="example">font-size{ <br>
+                    18pt; <br>
+                } </td>
+            </tr>
+            <tr class="table-tag">
+                <td class="tag-element">text-decoration</td>
+                <td>applies a decoration or clears it from a piece of text. none, 
+                    underline, overline, line-through or blink can be used.</td>
+                <td class="example">text-decoration{ <br>
+                    none; <br>
+                } </td>
+            </tr>
+            <tr>
+                <td class="tag-element">text-align</td>
+                <td>tells the browser where to align the text. start, end, 
+                    left, right, center or justify can be used.</td>
+                <td class="example">text-align{ <br>
+                    center; <br>
+                } </td>
+            </tr>
+            <tr class="table-tag">
+                <td class="tag-element">color</td>
+                <td>changes the color of the font</td>
+                <td class="example">color{ <br>
+                    white; <br>
+                } </td>
+            </tr>
+            <tr>
+                <td class="tag-element">list-style-type</td>
+                <td>tells the browser how a list item will be render (the bullet point) 
+                    google this as there are many options!</td>
+                <td class="example">list-style-type{ <br>
+                    various options; <br>
+                } </td>
+            </tr>
+            <tr class="table-tag">
+                <td class="tag-element">display</td>
+                <td>helps to position elements on the page. google this 
+                    as there are many options.</td>
+                <td class="example">display{ <br>
+                    inline-block; <br>
+                } </td>
+            </tr>
+            <tr>
+                <td class="tag-element">padding</td>
+                <td>applies padding around an element. top, left, bottom, middle can be used.</td>
+                <td class="example">padding{ <br>
+                    10px 20px 20px 10px; <br>
+                } </td>
+            </tr>
+            <tr class="table-tag">
+                <td class="tag-element">margin</td>
+                <td>applies a margin to an element. top, left, bottom, middle can be used.</td>
+                <td class="example">margin{ <br>
+                    10px 20px 20px 10px; <br>
+                } </td>
+            </tr>
+            <tr>
+                <td class="tag-element">border</td>
+                <td>applies a border to an element. top, left, bottom, middle can be used.</td>
+                <td class="example">border{ <br>
+                    solid white 10px; <br>
+                } </td>
+            </tr>
+          
+        </table>
+
+    </div>
+
+</div>
+<footer>
+    <h5>Copyright Sian Wheatcroft</h5>
+</footer>
+    
+</body>
+</html>
+

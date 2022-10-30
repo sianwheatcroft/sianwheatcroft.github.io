@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+  }
+
+body{
+    background-color: thistle;
+    width: 100%;
+    margin: 0px;
+    position: absolute;
+    font-family: "JetBrains Mono", Arial, Helvetica, sans-serif;
+    padding-bottom:30px;
+    
+}
+
+.main-content{
+    margin-top: 100px;
+}
+
+header{
+    margin-top: 0px;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 1;
+}
+
+header, ul{
+    padding: 0px;
+    margin: 0px;
+}
+
+header li {
+    display: inline-block;
+    height: 80px;
+    padding: 30px;
+    list-style-type: none;
+    font-family: "JetBrains Mono";
+    font-weight: 700;
+}
+
+header a{
+    color:black;
+    text-decoration: none;
+}
+
+
+.main-content h1{
+    font-family: Pacifico, Arial, Helvetica, sans-serif;
+    font-size: 82pt;
+    text-align: center;
+    line-height: 0.9;
+    padding-top: 10px;
+    margin-bottom:20px;
+}
+
+.main-content p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.main-content h2{
+    background-color: rgb(157, 224, 218);
+    text-align: center;
+}
+
+
+
+
+
+
+table{
+    width: 800px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid black 1px;
+    border-radius: 20px;
+}
+
+
+td {
+    padding: 10px;
+    font-size: 10pt;
+}
+
+th{
+    padding:10px;
+}
+
+.table-tag{
+    background-color: rgb(235, 233, 233);
+    border-radius: 10px;
+}
+
+.tag-element{
+    width:200px;
+    font-weight: bold;
+}
+
+.example{
+    width: 300px;
+}
+
+footer h5{
+    text-align: center;
+    color: rgb(167, 167, 167);
+}
